@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.navbar
+{
+    z-index: 2;
+    width: auto;
+    position: relative;
+    height: 50px;
+    /* border: 1px solid darkgrey; */
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0 0 4px 3px rgba(0,0,0,0.2);
+}
+.navbar-inside
+{
+    /* border: 2px solid pink; */
+    z-index: 1;
+    height: 190px;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    width: 100%;
+    top: 10px;
+    display: block;
+}
+.nav_ 
+{
+    padding: 30px;
+    list-style-type: none;
+}
+.nav_ li
+{
+   /* margin-top: 2px; */
+   text-transform:capitalize;
+}
+
+.nav_ li a
+{
+    line-height: 35px;
+   text-decoration: none;
+   color: rgb(168, 168, 168);
+}
+.navbar .button{
+    display: none;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 20%;
+    right: 25px;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    background:rgb(0, 0, 0) ;
+}
+.navbar .button span{
+    border: 1.3px solid rgb(168, 168, 168);
+    background: rgb(168, 168, 168);
+    display: block;
+    height: 0;
+    margin: 15% 0;
+
+}
+.navbar .text{
+    /* border: 2px solid red; */
+    display: flex;
+    margin-left: 20px;
+    /* margin-top: 5px; */
+    width: 200px;
+    /* justify-content: center;
+    align-items: center; */
+    
+}
+.navbar .text .hello{
+    margin-top: 5px;
+    margin-left: 20px;
+}
+.navbar .text a,.navbar .text p{
+    /* border: 2px solid red; */
+    margin-top: 5px ;
+   text-decoration: none;
+   color: white;
+}
+.navbar .links
+{
+    display: inline-block;
+    position: absolute;
+    top: 25%;
+    right: 20px;
+}
+.navbar .links ul{
+    /* border: 2px solid red; */
+    display: flex;
+    list-style-type: none;
+}
+.navbar .links ul li{
+    margin: 0 8px;
+    text-transform:capitalize;
+}
+.navbar .links ul li button
+{
+    background-color: rgb(0, 0, 0);
+    outline: none;
+    border: transparent;
+    color: rgb(168, 168, 168);
+    font-size: 16px;
+}
+.nav_ li button
+{
+    text-decoration: none;
+    line-height: 35px;
+    background-color: rgb(0, 0, 0);
+    outline: none;
+    border: transparent;
+    color: rgb(168, 168, 168);
+    font-size: 16px;
+    margin-right: 310px;
+}
+.navbar .links ul li a
+{
+   text-decoration: none;
+   color: rgb(168, 168, 168);
+}
+@media screen and (max-width: 768px) {
+    .navbar .links
+    {
+        display: none;
+    }
+    .navbar .button{
+        display: inline-block;
+       
+    }
+}
+.navbar-inside, #ham {
+    display: none;
+}
+
+#ham:checked ~ .navbar-inside{
+    display: block;
+}
+.navbar .links ul li:hover a  
+{
+   color: rgb(236, 234, 234);
+}
+.navbar .links ul li button:hover p
+{
+    color: rgb(236, 234, 234);
+}
+.navbar-inside ul li:hover a , .navbar-inside ul li button:hover p
+{
+   color: rgb(236, 234, 234);
+}
+.navbar .button:hover span
+{
+    border: 1.3px solid rgb(236, 234, 234);
+    background: rgb(236, 234, 234);
+}

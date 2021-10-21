@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container
+{
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 10px;
+    position: relative;
+}
+.container .content
+{
+    /* position: absolute; */
+    /* border: 2px solid rgb(130, 248, 130); */
+    width: 45%;
+    height: auto;
+    /* left: 27%;
+    top: 50%; */
+    overflow: hidden;
+    margin : 14% auto;
+}
+.container .content .error
+{
+    text-align: center;
+    color: red;
+}
+.container .content form
+{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.container .content form button{
+    padding: 2.2%;
+    border-radius: 4px;
+    outline: none;
+    border: transparent;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background:#990011FF ;
+    color: #FCF6F5FF;
+}
+.container .content h2{
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.container .content table
+{
+    /* border: 2px solid blue; */
+    /* padding: 10px; */
+    width: 100%;
+    margin-bottom: 10px;
+}
+.container .content table tr{
+    border-bottom: 2px solid grey;
+    width: 100%;
+    
+}
+.container .content table tr th{
+    /* border: 2px solid orange; */
+    
+    padding: 10px;
+}
+.container .content table tr th p
+{
+    border-bottom: 2px solid grey;
+}
+.container .content table tr td{
+    text-align: center;
+    
+}
+.container .content table tr td p{
+    margin: 5px;
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    .container{
+       display: flex;
+       flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        
+    }
+    .container .content
+    {
+        position: static;
+        /* flex: 20%; */
+        /* border: 2px solid green; */
+        width: 80%;
+        /* height: 300px; */
+        margin: 8% auto;
+       
+    }
+}

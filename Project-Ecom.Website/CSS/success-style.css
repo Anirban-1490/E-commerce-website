@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container-
+{
+    height: 100vh;
+    /* border: 2px solid red; */
+    width: 100%;
+    position: relative;
+}
+.content-
+{
+    /* border: 2px solid red; */
+    position: absolute;
+    width: 45%;
+    height: auto;
+    left: 27%;
+    top: 40%;
+}
+.content- .thanks 
+{
+    margin-bottom: 20px;
+}
+.content- .thanks p ,.content- .more
+{
+   text-align: center;
+}
+.content- .more a
+{
+    text-decoration: none;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    .container-{
+        display: flex;
+        flex-direction: column;
+         width: 100%;
+         justify-content: center;
+         
+     }
+    .content-
+    {
+        position: static;
+        /* flex: 20%; */
+        /* border: 2px solid green; */
+        width: 80%;
+        /* height: 300px; */
+        margin: 8% auto;
+       
+    }
+}

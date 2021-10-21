@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.content
+{
+    z-index: -3;
+    /* border: 2px solid red; */
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    /* display: flex; */
+}
+.content .card
+{
+    border: 2px solid rgb(226, 226, 226);
+    width: 24.3%;
+    height: auto;
+    margin: 4.2%;
+    display: inline-block;
+}
+.content .card .card-header
+{
+    border-bottom: 2px solid lightgray;
+    width: 100%;
+    height: 40px;
+    padding: 7px 10px;
+   
+    background: #FAEBEFFF;
+}
+.content .card .image
+{
+    width: 100%;
+    /* border: 2px solid blue; */
+    height: 200px;
+    overflow: hidden;
+    display: flex;
+    padding: 9%;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+}
+.content .card .image img{
+    width: 100%;
+    height: auto;
+    
+}
+.content .card .card-header h3
+{
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    color: #333D79FF;
+}
+.content .card h3{
+    font-weight: 600;
+    margin-top: 1%;
+}
+.content .card .order
+{
+    /* border: 2px solid rebeccapurple; */
+    width: 70%;
+    height: 20px;
+    margin: 4% 14%;
+    height: auto;
+}
+.content .card .order .unset{
+    width: 100%;
+    outline: none;
+    background: #990011FF ;
+    color: white;
+    border: transparent;
+    border-radius: 4px;
+}
+.content .card .order .set{
+    width: 100%;
+    outline: none;
+    background: #990011FF ;
+    color: white;
+    border: transparent;
+    opacity: 0.5;
+    cursor: not-allowed;
+    border-radius: 4px;
+    pointer-events: none;
+}
+.content .card .order p
+{
+   padding: 4.5%;
+   text-align: center;
+}
+.footer{
+    /* border: 2px solid green; */
+    width: 100%;
+    height: auto;
+    position:relative;
+    bottom: 0;
+    /* border: 1px solid darkgrey; */
+    background-color: #2D2926FF;
+
+}
+.footer .foo{
+    /* border: 2px solid yellow; */
+    display: inline-block;
+    width: 300px;
+    height: 100px;
+    margin: 2.9% 4.5%;
+}
+.footer .foo .foo-header
+{
+    /* border: 2px solid blue; */
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    color: white;
+}
+.footer .foo p{
+    margin-top: 5px;
+    text-align: center;
+    color: whitesmoke;
+    line-height: 30px;
+}
+.footer .foo p a{
+    text-decoration: none;
+    color: rgb(179, 177, 177);
+    
+}
+.footer .foo .foo-header h2{
+    font-size: 1.6em;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+@media screen and (max-width: 768px) {
+    .content{
+       display: flex;
+       flex-direction: column;
+        width: 100%;
+    }
+    .content .card
+    {
+        flex: 50%;
+        width :50%;
+        margin: 2% auto;
+        
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+/* #login:target
+{
+    display: block;
+} */
+#close 
+{
+    display: none;
+}
+
+/* #login:checked ~ .login{
+    display: block;
+} */
+#close:checked ~ .login,
+#close:checked ~ .overlay
+{
+    display: block;
+}
+
+.navbar .links ul li:hover a  
+{
+   color: rgb(236, 234, 234);
+}
+.navbar-inside ul li:hover a  
+{
+   color: rgb(236, 234, 234);
+}
+.footer .foo p a:hover{
+   
+    color: rgb(236, 234, 234);
+}
+.navbar .button:hover span
+{
+    border: 1.3px solid rgb(236, 234, 234);
+    background: rgb(236, 234, 234);
+}
+.login h2 button:hover .two, 
+.login h2 button:hover .one
+
+{
+    background:  rgb(236, 234, 234);
+}
+.login p a:hover
+{
+    color:rgb(236, 234, 234) ;
+}
+.content .card .order button:active
+{
+    background:rgb(94, 8, 18) ;
+}
